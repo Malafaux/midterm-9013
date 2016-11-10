@@ -1,0 +1,207 @@
+/**************************************************
+Fonts
+Algreya
+Roboto
+
+Font Scaling
+6.854rem
+4.236rem
+2.618rem
+1.618rem
+1.0rem
+0.618rem
+
+Colour scheme
+
+**************************************************/
+@import 'https://fonts.google.com/specimen/Alegreya';
+@import 'https://fonts.google.com/specimen/Roboto';
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 12px;
+    line-height: 1.6;
+    font-family: 'Roboto', sans-serif;
+}
+/*************************** 
+DEFAULTS - MOBILE FIRST 
+***************************/
+h1{
+    font: bold 4.236rem 'Algreya', serif;
+}
+h2{
+    font: bold 2.618rem 'Algreya', serif;
+}
+li, p, a{
+    font: 1.618rem 'Roboto', sans-serif;
+}
+pre, code, kbd{
+    font: normal 1.0rem 'Roboto';
+}
+/***************************
+    LAYOUT - MOBILE FIRST
+***************************/
+.wrapper{
+    width: 95%;
+    margin: 0 auto;
+}
+header{
+    width: 100%;
+}
+nav{
+    width: 100%;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a,
+li a:link,
+li a:visited{
+    display: block;
+    font: bold 1.618rem 'Roboto', sans-serif;
+    text-align: center;
+}
+nav a:active,
+nav a:focus,
+nav a:hover{
+    background-color: dimgrey;
+}
+main{
+    width: 100%;
+}
+.col{
+    float: left;
+    width: 50%;
+}
+.col img{
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    background-color: azure;
+    float: left;
+    padding: 30px;
+}
+footer{
+    width: 100%;
+}
+
+@media screen and (min-width:1200px){
+    header{
+        width: 100%;
+        overflow: hidden;
+    }
+    nav{
+        width: 30%;
+    }
+    .nav links{
+        width: 100%;
+    }
+    main{
+        width: 100%;
+        display: inline;
+    
+    }
+    .col {
+        width: 35%;
+        float: left;
+        padding: 10px;
+    }
+    
+    .col first img{
+        width: 55%;
+    }
+    footer{
+        width: 100%;
+        float: left;
+    }
+   ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+    float: left;
+   
+}
+
+li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+     text-align: center;
+}
+}
+@media screen and (min-width: 800px){
+    header{
+        width: 100%;
+    }
+    nav{
+        width: 90%;
+    }
+    .nav links{
+        width: 20%;
+    }
+    main{
+        width: 100%;
+        
+    }
+    col first{
+        width: 100%;
+        
+    }
+    .col img{
+        width: 50%;
+    }
+    footer{
+        width: 100%;
+    }
+    
+    }
+}  
+@media screen and (min-width: 600px){
+    wrapper{
+        width: 100%;
+    }
+    .wrapper header{
+        width: 100%;
+    }
+    nav{
+        width: 90%;
+    }
+    .nav link{
+        width: 20%;
+    }
+    main{
+        width: 100%;
+    }
+    .col{
+        width: 50%;
+    }
+    .col img{
+        width: 60%;
+    }
+    footer{
+        width: 90%;
+    
+}
